@@ -27,6 +27,14 @@
 
     </properties>
 
+    <repositories>
+        <repository>
+            <id>pne</id>
+            <name>payneteasy repo</name>
+            <url>https://maven.pne.io</url>
+        </repository>
+    </repositories>
+    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -80,7 +88,7 @@
             <dependency>
                 <groupId>com.payneteasy.http-client</groupId>
                 <artifactId>http-client-impl</artifactId>
-                <version>1.0-1-SNAPSHOT</version>
+                <version>1.0-4</version>
             </dependency>
 
             <dependency>

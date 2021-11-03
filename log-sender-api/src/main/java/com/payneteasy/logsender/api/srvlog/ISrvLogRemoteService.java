@@ -7,4 +7,6 @@ public interface ISrvLogRemoteService {
 
     SaveLogsResponse saveLogs(SaveLogsRequest aRequest) throws SaveLogsException;
 
+    SaveLogsResponse saveLogs(String message) throws SaveLogsException;
+
 }

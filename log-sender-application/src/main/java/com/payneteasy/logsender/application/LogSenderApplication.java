@@ -71,8 +71,6 @@ public class LogSenderApplication implements Callable<Integer> {
 
     @Override
     public Integer call() {
-        LOGGER.info("Supported log format: %date{ISO8601} %level %thread  %logger %mdc %message%n");
-        LOGGER.info("Example: 2021.11.02 12:48:18.319+03:00 INFO [main]  InternalAnnouncer - Running under Java(TM) SE Runtime Environment\n");
         LogSender logSender = new LogSender(queueDir, baseUrl, deleteRolledFiles, rollCycle, program, facility);
         logSender.start();
 

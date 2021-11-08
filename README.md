@@ -38,3 +38,10 @@ java -jar log-sender-application-1.0-SNAPSHOT-jar-with-dependencies.jar -qdir /o
 2021.11.02 12:48:18.319+03:00 INFO [main]  er.InternalAnnouncer - Leave your e-mail to get information about the latest releases and patches at https://chronicle.software/release-notes/
 2021.11.02 12:48:18.319+03:00 DEBUG [main]  er.InternalAnnouncer - Process id: 6886 :: Chronicle Queue (5.22ea9)
 ```
+
+### Logback configuration pattern
+```xml
+<encoder>
+    <pattern>%d{yyyy.MM.dd HH:mm:ss.SSSXXX} %level [%thread]  %logger %mdc - %msg%n</pattern>
+</encoder>
+```

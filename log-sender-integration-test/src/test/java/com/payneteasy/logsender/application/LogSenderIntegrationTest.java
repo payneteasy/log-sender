@@ -1,9 +1,8 @@
-package com.payneteasy.logsender;
+package com.payneteasy.logsender.application;
 
 import com.google.gson.Gson;
 import com.payneteasy.logsender.api.srvlog.messages.SaveLogsMessage;
 import com.payneteasy.logsender.api.srvlog.messages.SaveLogsRequest;
-import com.payneteasy.logsender.application.LogSender;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
